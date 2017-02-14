@@ -28,7 +28,7 @@ function fork() {
     setTimeout(function() {
       var debug = new Debugger({
         port: config.subproc.debugPort,
-        host: '127.0.0.1'
+        host: '0.0.0.0'
       })
       function onError() {}
       debug.on('error', onError)
